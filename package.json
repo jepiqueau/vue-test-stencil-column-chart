@@ -1,6 +1,6 @@
 {
-  "name": "vue-test-linechart",
-  "version": "0.1.4",
+  "name": "vue-test-columnchart",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -12,10 +12,10 @@
     "stencil",
     "web component",
     "chart",
-    "line chart"
+    "column chart"
   ],
   "dependencies": {
-    "stencil-linechart": "^0.1.8",
+    "stencil-columnchart": "^0.2.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -32,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jepiqueau/vue-test-stencil-line-chart.git"
+    "url": "git+https://github.com/jepiqueau/vue-test-stencil-column-chart.git"
   },
   "author": "Jean Pierre Quéau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jepiqueau/vue-test-stencil-line-chart/issues"
+    "url": "https://github.com/jepiqueau/vue-test-stencil-column-chart/issues"
   },
-  "homepage": "https://github.com/jepiqueau/vue-test-stencil-line-chart#readme"
+  "homepage": "https://github.com/jepiqueau/vue-test-stencil-column-chart#readme"
 }

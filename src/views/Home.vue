@@ -3,18 +3,18 @@
     <ion-header>
       <ion-toolbar color="primary">
         <ion-title>
-          Line Chart Example in Vue
+          Column Chart Example in Vue
         </ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content padding>
-      <p>Test Linechart Web component in Vue.js</p>
+      <p>Test Columnchart Web component in Vue.js</p>
       <ion-button @click="goToAbout" size="large">Go to About</ion-button>
-      <ion-button @click="goToLineChart('basic')" size="large">Basic LineChart</ion-button>
-      <ion-button @click="goToLineChart('markers')" size="large">Line with Markers</ion-button>
-      <ion-button @click="goToLineChart('multiplelines')" size="large">Multiple Lines</ion-button>
-      <ion-button @click="goToLineChart('multipleplots')" size="large">Multiple Plots</ion-button>
+      <ion-button @click="goToColumnChart('allpositive')" size="large">Columns all positive</ion-button>
+      <ion-button @click="goToColumnChart('allnegative')" size="large">Columns all negative</ion-button>
+      <ion-button @click="goToColumnChart('cstyle')" size="large">Chart with cstyle</ion-button>
+      <ion-button @click="goToColumnChart('multipleplots')" size="large">Multiple Plots</ion-button>
     </ion-content>
   </ion-app>
 </template>
@@ -26,8 +26,8 @@ export default {
     goToAbout: function() {
       this.$router.push("about");
     },
-    goToLineChart: function(type) {
-      this.$router.push("linechart/"+type);
+    goToColumnChart: function(type) {
+      this.$router.push("columnchart/"+type);
     },
     goToTest: function(type) {
       this.$router.push("test/"+type);

@@ -12,10 +12,10 @@ export default new Router({
       component: Home
     },
     {
-      path: "/linechart/:type",
-      name: "linechart",
+      path: "/columnchart/:type",
+      name: "columnchart",
       component: () =>
-        import(/* webpackChunkName: "linechart" */ "./views/LineChart.vue")
+        import(/* webpackChunkName: "linechart" */ "./views/ColumnChart.vue")
     },
     {
       path: "/about",

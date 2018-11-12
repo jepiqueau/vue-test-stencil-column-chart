@@ -27,13 +27,7 @@ export default {
     --chart-tick-x-length: 5px;
     --chart-tick-y-length: 4px;
     --chart-grid-x: false;
-    --chart-axis-x-zero: false;
-    --chart-axis-y-zero: false;
-    --chart-axis-x-interval: 20;
-    --chart-axis-y-interval: 50;
     --chart-animation-duration: 1s;
-    --chart-legend-font-size: 12px;
-    --chart-legend-top: true;
     --chart-border-color: #000000;
     --chart-border-width: 4;   
 }

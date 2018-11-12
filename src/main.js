@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { defineCustomElements } from "stencil-linechart/dist/loader";
+import { defineCustomElements } from "stencil-columnchart/dist/loader";
 
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = [/^ion-/];
