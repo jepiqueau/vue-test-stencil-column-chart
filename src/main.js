@@ -3,9 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import { defineCustomElements } from "stencil-columnchart/dist/loader";
+import Ionic from "@ionic/vue";
 
-Vue.config.productionTip = false;
-Vue.config.ignoredElements = [/^ion-/];
+Vue.use(Ionic);
 Vue.config.ignoredElements = [/jeep-\w*/];
 
 defineCustomElements(window);
