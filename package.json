@@ -1,6 +1,6 @@
 {
   "name": "vue-test-columnchart",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -15,7 +15,6 @@
     "column chart"
   ],
   "dependencies": {
-    "@ionic/core": "^4.1.2",
     "@ionic/vue": "0.0.4",
     "stencil-columnchart": "^0.2.6",
     "vue": "^2.6.10",
