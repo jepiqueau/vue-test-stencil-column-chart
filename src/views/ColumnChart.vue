@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button defaultHref="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Columnchart</ion-title>
+        <ion-title>{{ this.title }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -13,7 +13,7 @@
       <template v-if="this.type === 'allpositive'">
         <jeep-columnchart
           ctitle="Basic Column Chart"
-          subtitle="test sub-title"
+          subtitle="All Positive"
           xtitle="test for x axis"
           ytitle="test for y axis"
           datapoints='{"data":[
@@ -30,7 +30,7 @@
       <template v-if="this.type === 'allnegative'">
         <jeep-columnchart
           ctitle="Basic Column Chart"
-          subtitle="test sub-title"
+          subtitle="All Negative"
           xtitle="test for x axis"
           ytitle="test for y axis"
           datapoints='{"data":[
@@ -46,7 +46,7 @@
       <template v-if="this.type === 'cstyle'">
         <jeep-columnchart
           ctitle="Basic Column Chart"
-          subtitle="test sub-title"
+          subtitle="With Style"
           xtitle="test for x axis"
           ytitle="test for y axis"
           datapoints='{"data":[
@@ -65,7 +65,7 @@
         <div>
           <jeep-columnchart
             ctitle="Basic Column Chart"
-            subtitle="test sub-title"
+            subtitle="Plot 1 with style"
             xtitle="test for x axis"
             ytitle="test for y axis"
             datapoints='{"data":[
@@ -80,7 +80,7 @@
           </jeep-columnchart>
           <jeep-columnchart
             ctitle="Basic Column Chart"
-            subtitle="test sub-title"
+            subtitle="Plot 2 with style"
             xtitle="test for x axis"
             ytitle="test for y axis"
             datapoints='{"data":[
@@ -105,7 +105,8 @@ export default {
   name: "columnchart",
   data() {
     return {
-      type: this.$route.params.type
+      type: this.$route.params.type,
+      title: `Column Chart ${this.$route.params.type}`
     };
   }
 };
